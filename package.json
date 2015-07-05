@@ -1,0 +1,29 @@
+{
+  "name": "unterstrich.css",
+  "version": "0.0.0",
+  "description": "Styling Helper Classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://boriskaiser@github.com/boriskaiser/unterstrich.css.git"
+  },
+  "keywords": [
+    "styling",
+    "css",
+    "helper",
+    "classes"
+  ],
+  "author": {
+    "name": "Boris Kaiser",
+    "email": "mail@boriskaiser.com",
+    "url": "http://boriskaiser.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boriskaiser/unterstrich.css/issues"
+  },
+  "homepage": "https://github.com/boriskaiser/unterstrich.css#readme"
+}
