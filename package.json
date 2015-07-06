@@ -4,7 +4,8 @@
   "description": "Styling Helper Classes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,14 @@
   "bugs": {
     "url": "https://github.com/boriskaiser/unterstrich.css/issues"
   },
-  "homepage": "https://github.com/boriskaiser/unterstrich.css#readme"
+  "homepage": "https://github.com/boriskaiser/unterstrich.css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.3",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.1"
+  }
 }
