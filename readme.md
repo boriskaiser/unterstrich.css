@@ -1,4 +1,4 @@
-![Unterstrich + Emmet + BEM](https://rawgit.com/boriskaiser/unterstrich.css/develop/_media/unterstrich.css.svg)
+![Unterstrich + Emmet + BEM](https://rawgit.com/boriskaiser/unterstrich.css/master/_media/unterstrich.css.svg)
 # unterstrich.css
 Styling Helper Classes.
 
