@@ -33,7 +33,11 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.3",
+    "pre-commit": "^1.0.10",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.1"
-  }
+  },
+  "pre-commit": [
+    "test"
+  ]
 }
