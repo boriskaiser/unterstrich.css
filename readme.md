@@ -4,7 +4,6 @@ Styling Helper Classes.
 
 [![GitHub version](https://badge.fury.io/gh/boriskaiser%2Funterstrich.css.svg)](http://badge.fury.io/gh/boriskaiser%2Funterstrich.css)
 [![Build Status](https://travis-ci.org/boriskaiser/unterstrich.css.svg?branch=develop)](https://travis-ci.org/boriskaiser/unterstrich.css)
-[![Coverage Status](https://coveralls.io/repos/boriskaiser/unterstrich.css/badge.svg)](https://coveralls.io/r/boriskaiser/unterstrich.css)
 
 [![Dependency Status](https://david-dm.org/boriskaiser/unterstrich.css.svg)](https://david-dm.org/boriskaiser/unterstrich.css)
 [![devDependency Status](https://david-dm.org/boriskaiser/unterstrich.css/dev-status.svg)](https://david-dm.org/boriskaiser/unterstrich.css#info=devDependencies)
