@@ -1,1 +1,21 @@
-/* unterstrich.css */
+/* Unterstrich.css */
+@import 'properties';
+
+._ { // Namespace class  `_`
+
+  @each $property-name, $property-map in $properties {
+
+    $abbreviation: map-get($property-map, 'abbreviation');
+    $snippets: map-get($property-map, 'snippets');
+
+    &#{$abbreviation} {
+      @each $snippet-suffix, $snippet-value in $snippets {
+
+        &--#{$snippet-suffix} {
+          #{$property-name}: #{$snippet-value};
+        }
+      }
+    }
+  }
+
+}
