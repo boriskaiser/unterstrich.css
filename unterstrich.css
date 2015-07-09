@@ -178,43 +178,33 @@
 
 ._m {
   margin: 0 !important; }
-  ._m-- { }
 
 ._mt {
   margin-top: 0 !important; }
-  ._mt-- { }
 
 ._mr {
   margin-right: 0 !important; }
-  ._mr-- { }
 
 ._mb {
   margin-bottom: 0 !important; }
-  ._mb-- { }
 
 ._ml {
   margin-left: 0 !important; }
-  ._ml-- { }
 
 ._p {
   padding: 0 !important; }
-  ._p-- { }
 
 ._pt {
   padding-top: 0 !important; }
-  ._pt-- { }
 
 ._pr {
   padding-right: 0 !important; }
-  ._pr-- { }
 
 ._pb {
   padding-bottom: 0 !important; }
-  ._pb-- { }
 
 ._pl {
   padding-left: 0 !important; }
-  ._pl-- { }
 
 ._bxz {
   box-sizing: content-box !important; }
@@ -250,11 +240,9 @@
 
 ._miw {
   min-width: 0 !important; }
-  ._miw-- { }
 
 ._mih {
   min-height: 0 !important; }
-  ._mih-- { }
 
 ._fw {
   font-weight: normal !important; }
@@ -330,7 +318,6 @@
 
 ._ti {
   text-indent: 0 !important; }
-  ._ti-- { }
 
 ._none {
   text-transform: none !important; }

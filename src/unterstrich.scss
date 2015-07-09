@@ -11,10 +11,12 @@
 
     &#{$abbreviation} {
       #{$property-name}: #{$initial-value} !important;
-
-      @each $snippet-suffix, $snippet-value in $snippets {
-        &--#{$snippet-suffix} {
-          #{$property-name}: #{$snippet-value};
+ 
+      @if $snippets {
+        @each $snippet-suffix, $snippet-value in $snippets {
+          &--#{$snippet-suffix} {
+            #{$property-name}: #{$snippet-value};
+          }
         }
       }
     }
