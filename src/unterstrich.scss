@@ -6,11 +6,13 @@
   @each $property-name, $property-map in $properties {
 
     $abbreviation: map-get($property-map, 'abbreviation');
+    $initial-value: map-get($property-map, 'initial-value');
     $snippets: map-get($property-map, 'snippets');
 
     &#{$abbreviation} {
-      @each $snippet-suffix, $snippet-value in $snippets {
+      #{$property-name}: #{$initial-value} !important;
 
+      @each $snippet-suffix, $snippet-value in $snippets {
         &--#{$snippet-suffix} {
           #{$property-name}: #{$snippet-value};
         }

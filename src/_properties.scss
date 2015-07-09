@@ -1,7 +1,61 @@
 $properties: (
 
+  // Visual Formatting
+
+  position: (
+    abbreviation: pos,
+    initial-value: static,
+    snippets: (
+      s: static,
+      a: absolute,
+      r: relative,
+      f: fixed
+    )
+  ),
+
+  top: (
+    abbreviation: t,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  right: (
+    abbreviation: r,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  bottom: (
+    abbreviation: b,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  left: (
+    abbreviation: l,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  z-index: (
+    abbreviation: z,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
   float: (
     abbreviation: fl,
+    initial-value: none,
     snippets: (
       n: none,
       l: left,
@@ -11,6 +65,7 @@ $properties: (
 
   clear: (
     abbreviation: cl,
+    initial-value: none,
     snippets: (
       n: none,
       l: left,
@@ -21,26 +76,48 @@ $properties: (
 
   display: (
     abbreviation: d,
+    initial-value: inline,
     snippets: (
       n: none,
       b: block,
       f: flex,
       if: inline-flex,
       i: inline,
-      ib: inline-block
+      ib: inline-block,
+      li: list-item,
+      ri: run-in,
+      cp: compact,
+      tb: table,
+      itb: inline-table,
+      tbcp: table-caption,
+      tbcl: table-column,
+      tbclg: table-column-group,
+      tbhg: table-header-group,
+      tbfg: table-footer-group,
+      tbr: table-row,
+      tbrg: table-row-group,
+      tbc: table-cell,
+      rb: ruby,
+      rbb: ruby-base,
+      rbbg: ruby-base-group,
+      rbt: ruby-text,
+      rbtg: ruby-text-group
     )
   ),
 
   visibility: (
     abbreviation: v,
+    initial-value: visible,
     snippets: (
       v: visible,
-      h: hidden
+      h: hidden,
+      c: collapse
     )
   ),
 
   overflow: (
     abbreviation: ov,
+    initial-value: visible,
     snippets: (
       v: visible,
       h: hidden,
@@ -49,13 +126,413 @@ $properties: (
     )
   ),
 
+  overflow-x: (
+    abbreviation: ovx,
+    initial-value: visible,
+    snippets: (
+      v: visible,
+      h: hidden,
+      s: scroll,
+      a: auto
+    )
+  ),
+
+  overflow-y: (
+    abbreviation: ovy,
+    initial-value: visible,
+    snippets: (
+      v: visible,
+      h: hidden,
+      s: scroll,
+      a: auto
+    )
+  ),
+
+  resize: (
+    abbreviation: rsz,
+    initial-value: none,
+    snippets: (
+      n: none,
+      b: both,
+      h: horizontal,
+      v: vertical
+    )
+  ),
+
+  cursor: (
+    abbreviation: cur,
+    initial-value: auto,
+    snippets: (
+      a: auto,
+      d: default,
+      c: crosshair,
+      he: help,
+      m: move,
+      p: pointer,
+      t: text
+    )
+  ),
+
+  // Margin & Padding
+
+  margin: (
+    abbreviation: m,
+    initial-value: 0
+  ),
+
+  margin-top: (
+    abbreviation: mt,
+    initial-value: 0
+  ),
+
+  margin-right: (
+    abbreviation: mr,
+    initial-value: 0
+  ),
+
+  margin-bottom: (
+    abbreviation: mb,
+    initial-value: 0
+  ),
+
+  margin-left: (
+    abbreviation: ml,
+    initial-value: 0
+  ),
+
+  padding: (
+    abbreviation: p,
+    initial-value: 0
+  ),
+
+  padding-top: (
+    abbreviation: pt,
+    initial-value: 0
+  ),
+
+  padding-right: (
+    abbreviation: pr,
+    initial-value: 0
+  ),
+
+  padding-bottom: (
+    abbreviation: pb,
+    initial-value: 0
+  ),
+
+  padding-left: (
+    abbreviation: pl,
+    initial-value: 0
+  ),
+
+  // Box Sizing
+
+  box-sizing: (
+    abbreviation: bxz,
+    initial-value: content-box,
+    snippets: (
+      cb: content-box,
+      bb: border-box
+    )
+  ),
+
+  box-shadow: (
+    abbreviation: bxsh,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+  width: (
+    abbreviation: w,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  height: (
+    abbreviation: h,
+    initial-value: auto,
+    snippets: (
+      a: auto
+    )
+  ),
+
+  max-width: (
+    abbreviation: maw,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+  max-height: (
+    abbreviation: mah,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+  min-width: (
+    abbreviation: miw,
+    initial-value: 0
+  ),
+
+  min-height: (
+    abbreviation: mih,
+    initial-value: 0
+  ),
+
+  // Font
+
+  font-weight: (
+    abbreviation: fw,
+    initial-value: normal,
+    snippets: (
+      nm: normal,
+      b: bold,
+      br: bolder,
+      lr: lighter
+    )
+  ),
+
+  font-style: (
+    abbreviation: fs,
+    initial-value: normal,
+    snippets: (
+      nm: normal,
+      i: italic,
+      o: oblique
+    )
+  ),
+
+  // Text
+
+  vertical-align: (
+    abbreviation: va,
+    initial-value: baseline,
+    snippets: (
+      sup: super,
+      t: top,
+      tt: text-top,
+      m: middle,
+      bl: baseline,
+      b: bottom,
+      tb: text-bottom,
+      sub: sub
+    )
+  ),
+
   text-align: (
     abbreviation: ta,
+    initial-value: start,
     snippets: (
       l: left,
       c: center,
       r: right,
       j: justify
     )
+  ),
+
+  text-align-last: (
+    abbreviation: tal,
+    initial-value: auto,
+    snippets: (
+      a: auto,
+      l: left,
+      c: center,
+      r: right
+    )
+  ),
+
+  text-decoration: (
+    abbreviation: td,
+    initial-value: none,
+    snippets: (
+      n: none,
+      u: underline,
+      o: overline,
+      l: line-through
+    )
+  ),
+
+  text-indent: (
+    abbreviation: ti,
+    initial-value: 0
+  ),
+
+  text-transform: (
+    abbreviation: none,
+    initial-value: none,
+    snippets: (
+      n: none,
+      c: capitalize,
+      u: uppercase,
+      l: lowercase
+    )
+  ),
+
+  text-shadow: (
+    abbreviation: tsh,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+
+  line-height: (
+    abbreviation: lh,
+    initial-value: normal,
+    snippets: (
+      nm: normal
+    )
+  ),
+
+  letter-spacing: (
+    abbreviation: lts,
+    initial-value: normal,
+    snippets: (
+      nm: normal
+    )
+  ),
+
+  white-space: (
+    abbreviation: whs,
+    initial-value: normal,
+    snippets: (
+      nm: normal,
+      p: pre,
+      nw: nowrap,
+      pw: pre-wrap,
+      pl: pre-line
+    )
+  ),
+
+
+  word-break: (
+    abbreviation: wob,
+    initial-value: normal,
+    snippets: (
+      nm: normal,
+      k: keep-all,
+      ba: break-all
+    )
+  ),
+
+  word-spacing: (
+    abbreviation: wos,
+    initial-value: normal,
+    snippets: (
+      nm: normal
+    )
+  ),
+
+  word-wrap: (
+    abbreviation: wws,
+    initial-value: normal,
+    snippets: (
+      nm: normal,
+      b: break-word
+    )
+  ),
+
+  // Background
+
+  background: (
+    abbreviation: bg,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+  background-color: (
+    abbreviation: bgc,
+    initial-value: transparent,
+    snippets: (
+      t: transparent
+    )
+  ),
+
+  background-image: (
+    abbreviation: bgc,
+    initial-value: none,
+    snippets: (
+      n: none
+    )
+  ),
+
+  background-repeat: (
+    abbreviation: bgr,
+    initial-value: repeat,
+    snippets: (
+      n: no-repeat,
+      x: repeat-x,
+      y: repeat-y,
+      sp: space,
+      rd: round
+    )
+  ),
+
+  background-attachment: (
+    abbreviation: bga,
+    initial-value: scroll,
+    snippets: (
+      f: fixed,
+      s: scroll
+    )
+  ),
+
+  background-position: (
+    abbreviation: bgp,
+    initial-value: 0% 0%,
+    snippets: (
+      t: top,
+      r: right,
+      b: bottom,
+      l: left
+    )
+  ),
+
+  background-clip: (
+    abbreviation: bgcp,
+    initial-value: border-box,
+    snippets: (
+      bb: border-box,
+      pb: padding-box,
+      cb: content-box
+    )
+  ),
+
+
+  background-origin: (
+    abbreviation: bgo,
+    initial-value: padding-box,
+    snippets: (
+      pb: padding-box,
+      bb: border-box,
+      cb: content-box
+    )
+  ),
+
+  background-size: (
+    abbreviation: bgsz,
+    initial-value: auto auto,
+    snippets: (
+      a: auto,
+      ct: contain,
+      cv: cover
+    )
   )
+
+  // Color
+  // @TODO (boriskaiser): ...
+
+
+
+
 );
